@@ -1,7 +1,7 @@
 document.querySelector('#go').addEventListener('click', picOfTheDay)
 function picOfTheDay() {
   let date = document.querySelector('#start').value
-  fetch(`https://api.nasa.gov/planetary/apod?api_key=V69vZecBifL4IoReSYm5E5bFpchewSNV4jslKUv6&date=${date}&thumbs=true`)
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=[api-key]&date=${date}&thumbs=true`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       console.log(data);
