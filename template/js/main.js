@@ -1,7 +1,7 @@
 document.querySelector('#go').addEventListener('click', picOfTheDay)
 function picOfTheDay() {
   let date = document.querySelector('#start').value
-  fetch(`https://api.nasa.gov/planetary/apod?api_key=[api-key]&date=${date}&thumbs=true`)
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=zBKjFL09eMxBB4M12clV1Rjdta5LOuUcxT0Fi6OH&date=${date}&thumbs=true`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       console.log(data);
@@ -11,7 +11,7 @@ function picOfTheDay() {
       document.querySelector('img').src = data.url
       document.querySelector('h2').innerText = data.title
       document.querySelector('p').textContent = data.explanation
-      fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=viewCount&key=AIzaSyB3NM8chUdUIhpVtti3szpSmg3kClllntI&q=${data.title}`)
+      fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=viewCount&key=AIzaSyBeGebo1r3WZZKnkdIfF-B3E-xi3FQFcik&q=${data.title}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)
