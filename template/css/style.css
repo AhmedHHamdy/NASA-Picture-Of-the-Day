@@ -1,0 +1,146 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  background: url('..//assets//photo-1531956468651-8fc931f28a9b.avif') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 62.5%;
+}
+
+body {
+  text-align:  center;
+  height: 740px;
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1 {
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-size: 3rem;
+}
+
+#first-section {
+  margin: 70px 0  0 100px;
+  height: 200px;
+  
+}
+
+input {
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 2rem;
+  margin-bottom: 20.100px ;
+}
+
+form {
+  display: inline-block;
+}
+
+button {
+  display: inline;
+  width: 155px;
+  height: 28px;
+  margin-left: 15px;
+  font-size: 2rem;
+  font-family: 'Space Mono', monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+#second-section {
+  width: 1300px;
+  background-color: rgba(255, 255, 255, .001);
+  margin: 0 auto;
+  height: 530px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#ist-container {
+  width: 45%;
+}
+
+#sec-container {
+  width: 50%;
+
+  
+}
+
+#second-section h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Space Mono', monospace;
+  margin-top: 0;
+}
+
+#second-section p {
+  color: white;
+  background-color: rgba(184, 182, 182, 0.2);
+  border-radius: 15px;
+  font-size: 1.6rem;
+  margin-left: 20px;
+  padding: 10px;
+  line-height: 1.5;
+  font-family: 'Space Mono', monospace;
+}
+
+#second-section img {
+  width: 550px;
+  margin-top: 27px;
+  border: 2px solid rgb(163, 163, 163);
+}
+
+iframe {
+  width: 80%;
+  height: 70%;
+  border: none;
+
+}
+
+#second-section #s {
+  margin-top: 100px;
+  opacity: 0.9;
+  width: 300px;
+  border: none;
+}
